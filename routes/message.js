@@ -1,6 +1,6 @@
 const express=require('express');
 const fs=require('fs');
-const data=require('./data');
+
 
 const router=express.Router();
 
@@ -17,12 +17,8 @@ router.get('/',(req,res,next)=>{
 });
 
 router.post('/',(req,res,next)=>{
-    if(Object.keys(req.body).length===2){
-    data.push(`{${req.body.username}:${req.body.message}}`);
-    console.log(data);
-    fs.appendFile('message.txt',`${req.body.username} : ${req.body.message} `,err=>console.log(err));
-    }
-    res.redirect('/');
+    fs.appendFile('message.txt',`${req.body.username} : ${req.body.message} `,err=>
+        err?console.log(err):res.redirect('/'));
 });
 
 module.exports=router;

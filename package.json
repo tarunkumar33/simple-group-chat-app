@@ -1,7 +1,6 @@
 {
   "name": "groupchatapp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +12,15 @@
     "body-parser": "^1.20.0",
     "express": "^4.18.1",
     "nodemon": "^2.0.19"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarunkumar33/simple-group-chat-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tarunkumar33/simple-group-chat-app/issues"
+  },
+  "homepage": "https://github.com/tarunkumar33/simple-group-chat-app#readme",
+  "description": ""
 }
